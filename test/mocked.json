@@ -1,4 +1,6 @@
 [{
-  "success": true
+  "table": "one"
+}, {
+  "table": "two"
 }]
 

@@ -1,10 +1,20 @@
 var Q = require('q'),
+  _ = require('underscore'),
   Parent = require('heinzelmannchen-generator'),
   Generator = Parent.inherit();
 
 Generator.prototype.createData = function(jsonFilePath) {
-  var q = Q.defer();
-  q.resolve(require(this.config.json));
+  var q = Q.defer(),
+    data = require(this.config.json);
+  if (this.filters) {
+    data = _.filter(data, function(item) {
+      return _.any(this.filters, function(filter) {
+        var key = _.keys(filter)[0];
+        return _.contains(filter[key], item[key]);
+      }, this);
+    }, this);
+  }
+  q.resolve(data);
   return q.promise;
 };
 

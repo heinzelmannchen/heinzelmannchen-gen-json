@@ -1,4 +1,4 @@
-heinzelmannchen-gen-heinzelmannchen-gen-json
+heinzelmannchen-gen-json
 =========================
 
 generator for json-files
