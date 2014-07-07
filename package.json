@@ -1,0 +1,31 @@
+{
+  "name": "heinzelmannchen-gen-heinzelmannchen-gen-json",
+  "version": "1.0.2",
+  "description": "generator for json-files",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "q": "~1.0.0",
+    "heinzelmannchen-generator": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "chai": "*",
+    "chai-as-promised": "~4.1.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/heinzelmannchen/"
+  },
+  "author": "Stoeffel",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://github.com/heinzelmannchen//issues"
+  },
+  "homepage": "http://github.com/heinzelmannchen/"
+}
