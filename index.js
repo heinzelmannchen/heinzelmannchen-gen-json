@@ -5,7 +5,7 @@ var Q = require('q'),
 
 Generator.prototype.createData = function(jsonFilePath) {
   var q = Q.defer(),
-    data = require(this.config.json);
+    data = require(process.cwd() + '/' + this.config.json);
   if (this.filters) {
     data = _.filter(data, function(item) {
       return _.any(this.filters, function(filter) {
