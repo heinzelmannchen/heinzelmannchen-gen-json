@@ -1,6 +1,6 @@
 {
   "name": "heinzelmannchen-gen-json",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "generator for json-files",
   "main": "index.js",
   "directories": {
